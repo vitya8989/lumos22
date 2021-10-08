@@ -185,8 +185,8 @@ header::before {
   content: "";
   position: absolute;
   width: 83.15px;
-  height: 0;
-  border: 2px solid #fad264;
+  height: 4px;
+  background: #fad264;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -297,10 +297,18 @@ header::before {
 }
 .form__btn {
   background: -o-linear-gradient(14.07deg,#fad264 44.82%,#fce558 70.67%);
-  background: linear-gradient(75.93deg,#fad264 44.82%,#fce558 70.67%)
+  background: linear-gradient(75.93deg,#fad264 44.82%,#fce558 70.67%);
+  opacity: 1;
+  -webkit-transition: .3s opacity ease 0s;
+  -o-transition: .3s opacity ease 0s;
+  transition: .3s opacity ease 0s;
+  cursor: pointer
 }
 .form__btn.mobile {
   display: none
+}
+.form__btn.desktop:hover {
+  opacity: .7
 }
 .form__text {
   margin: 19px 0 0 0;
@@ -366,13 +374,13 @@ header::before {
   content: "";
   position: absolute;
   width: 70px;
-  height: 0;
+  height: 4px;
   bottom: -39px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  border: 2px solid #e130e3
+  background: #e130e3
 }
 .text-uppercase {
   text-transform: uppercase
@@ -508,13 +516,13 @@ header::before {
   content: "";
   position: absolute;
   width: 70px;
-  height: 0;
+  height: 4px;
   bottom: -39px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  border: 2px solid #fff
+  background: #fff
 }
 .you-need__row {
   margin: 102px 0 0 0
@@ -624,13 +632,13 @@ header::before {
   content: "";
   position: absolute;
   width: 70px;
-  height: 0;
+  height: 4px;
   bottom: -30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  border: 2px solid #e130e3
+  background: #e130e3
 }
 .three-days__subtitle {
   margin: 59px 0 0 0;
